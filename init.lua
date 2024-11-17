@@ -5,10 +5,13 @@
 require("xduskashes.commands") -- Shorthand commands
 require("xduskashes.keymaps") -- Custom mappings
 
--- Four spaces are tabs, not tab chars
-
 -- Line numbering
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.opt.termguicolors = true
+-- Use spaces instead of tabs because i hate tabs I HATE TABS >:((((((
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.tabstop = 4
+
