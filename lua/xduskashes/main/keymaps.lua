@@ -14,4 +14,4 @@ map("i","jj","<Esc>")
 -- Plugin mappings
 
 -- nvim-tree
-map("n","<LocalLeader>e",":NvimTreeToggle<CR>")
+map("n","<LocalLeader>t",":NvimTreeToggle<CR>")
