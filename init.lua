@@ -5,6 +5,9 @@
 require("xduskashes.main") -- "Main" or "Core" of my configs
 require("xduskashes.lazy") -- Lazy.nvim
 
+-- vim.opt stuff will be in 'lua/xduskashes/main/opts.lua' next commit.
+-- it's 10pm as i type this. do not get on my case about not doing it now.
+-- ~Dusk, 11/19/2024, 10:04 PM
 -- Line numbering
 vim.opt.number = true
 vim.opt.relativenumber = true
