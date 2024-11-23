@@ -15,3 +15,4 @@ map("i","jj","<Esc>")
 
 -- nvim-tree
 map("n","<LocalLeader>t",":NvimTreeToggle<CR>")
+map("n","<LocalLeader>f",":NvimTreeFocus<CR>")
