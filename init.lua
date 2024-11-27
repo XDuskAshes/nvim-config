@@ -11,10 +11,43 @@ vim.g.maplocalleader = "\\" -- <LocalLeader>
 
 -- Plugin setup
 --
--- Using nvim-tree, so murder netrw before it gets a chance to be used
+-- nvim-tree
+-- <https://github.com/nvim-tree/nvim-tree.lua>
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 require("nvim-tree").setup()
+
+-- lualine
+-- <https://github.com/nvim-lualine/lualine.nvim>
+require('lualine').setup {
+    options = {
+        icons_enabled = true,
+        theme = 'auto',
+        component_separators = { left = '\\', right = '/' },
+        section_separators = { left = '|', right = '|' },
+        disabled_filetypes = {
+            statusline = {},
+            winbar = {}
+        },
+        ignore_focus = {},
+        always_divide_middle = true,
+        always_show_tabline = true,
+        globalstatus = false,
+        refresh = {
+            statusline = 100,
+            tabline = 100,
+            winbar = 100
+        }
+    },
+    
+    sections = {
+        lualine_a = {'mode'},
+        lualine_b = {'filename'},
+        lualine_c = {'location'},
+        lualine_x = {'fileformat','filetype'},
+        lualine_z = {''}
+    }
+}
 
 
 -- When everything loads
