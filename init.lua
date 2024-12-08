@@ -49,6 +49,10 @@ require('lualine').setup {
     }
 }
 
+-- gruvbox
+-- <https://github.com/ellisonleao/gruvbox.nvim>
+vim.o.background = "dark"
+vim.cmd([[colorscheme gruvbox]])
 
 -- When everything loads
 print("Configs hopefully loaded smoothly.")
